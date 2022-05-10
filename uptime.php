@@ -7,7 +7,7 @@ function ping($host, $port, $timeout) {
 //To add extra servers edit this array
 $sites=array("127.0.0.1","github.com");
 foreach ($sites as $key) {
-	$status = ping($key,"80","8080");
+	$status = ping($key,"80","10");
 
  if ($status=="down") {
  	notify($key);
